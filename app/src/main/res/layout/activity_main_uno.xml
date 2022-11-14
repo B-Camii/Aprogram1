@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@drawable/backfondologin"
+    android:backgroundTint="@color/black"
+    android:backgroundTintMode="add"
+    tools:context=".MainActUno">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="685dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="35dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="200dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/baloo"
+            android:text="Bienvenidos"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUsuario"
+            android:layout_width="87dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/amaranth"
+            android:lineSpacingExtra="8sp"
+            android:text="Usuario"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.293"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="248dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUsuario"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvContraseña"
+            android:layout_width="92dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/amaranth"
+            android:lineSpacingExtra="8sp"
+            android:text="Contraseña"
+            android:textAlignment="center"
+            android:textColor="#040000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
+
+        <EditText
+            android:id="@+id/etContraseña"
+            android:layout_width="252dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#020000"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvContraseña"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnSiguienteUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="192dp"
+            android:text="Validar"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etContraseña" />
+
+        <TextView
+            android:id="@+id/tvRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-170dp"
+            android:text="Registrar"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

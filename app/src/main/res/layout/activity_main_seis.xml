@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backfondologin"
+    android:backgroundTint="#000000"
+    android:backgroundTintMode="add"
+    tools:context=".activity_main_seis">
+
+    <TextView
+        android:id="@+id/tvPreguntaDos"
+        android:layout_width="207dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/amaranth"
+        android:lineSpacingExtra="8sp"
+        android:text="EL ALGORITMO:"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RGalternativas"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreguntaDos">
+
+        <RadioButton
+            android:id="@+id/RBAlt1"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:fontFamily="@font/amaranth"
+            android:lineSpacingExtra="8sp"
+            android:text="Lenguaje de computadora que los programadores utilizan para comunicarse y desarrollar progrmas de software."
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/RBAlt2"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:fontFamily="@font/amaranth"
+            android:lineSpacingExtra="8sp"
+            android:text="Lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas."
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/RBAlt3"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:fontFamily="@font/amaranth"
+            android:lineSpacingExtra="8sp"
+            android:text="Es cualquier procedimiento computacional bien definido que parte de un conjunto de valores de entrada, a los cuales se les aplica una secuencoa de pasos computacionales finitos."
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnValidarseis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:onClick="onclick"
+        android:text="Valida"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RGalternativas"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

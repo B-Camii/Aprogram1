@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backfondologin"
+    tools:context=".MainActCuatro">
+
+    <TextView
+        android:id="@+id/txtTitulo3"
+        android:layout_width="239dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/amaranth"
+        android:text="(1) La programación es: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="280dp"
+        android:layout_height="347dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo3"
+        app:layout_constraintVertical_bias="0.119">
+
+        <RadioButton
+            android:id="@+id/RBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:fontFamily="@font/amaranth"
+            android:text="Programa capaz de almacenar gran cantidad de datos, relacionados y estructurados." />
+
+        <RadioButton
+            android:id="@+id/RBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:fontFamily="@font/amaranth"
+            android:text="Conjunto  ordenado de operaciones sistemáticas que permite hacer un calculo u operación." />
+
+        <RadioButton
+            android:id="@+id/RBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:fontFamily="@font/amaranth"
+            android:text="Indicarle a ala compitadora qué hacer, usando lenguajes de programacion." />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnValidarseis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:onClick="onclick"
+        android:text="Validar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
